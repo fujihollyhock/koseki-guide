@@ -1,0 +1,104 @@
+<!--Top-->
+<div class="top-img">
+    <div class="top-text">
+        <H1>Registration</H1>
+    </div>
+</div>
+
+<!--Concept-->
+<div class="concept">
+    <div class="row">
+        <!--Concept_text-->
+        <div class="col-md-6">
+            <h3 class="concept-title">Concept</h3>
+            <hr>
+            <p>このサイトでは、戸籍の届出全体の８割以上を占める、
+                <br>「出生届」、「婚姻届」、「離婚届」、「死亡届」、「転籍届」
+                <br>この５つの届出のかんたんな事前審査ができます。</p>
+            <br>
+            <p>戸籍の届出は書き方が独特で、しかも一生に何回も書くものではないので、どうやって書けばいいのかわかりにくいです。
+                <br>仕事で時間がなかったり、入院中だったり、育児で忙しかったりで、役所にわざわざ電話するのは難しいって方もいらっしゃると思います。</p>
+
+            <p>制作者は、元公務員で戸籍の部署で働いていました。
+                <br>１万件以上は届出を審査していたので、受理の基準はそれなりに正確です。
+                <br>このサイトの手順でそれぞれの届出を書いていただければ、おおむね受理されます。
+                <br>わからないことがあればお問い合わせくださいね。</p>
+        </div>
+        <!--Concept_img-->
+        <div class="col-md-6">
+            <div class="concept-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--menu-->
+<!--menu_title-->
+<h3 class="menu-title">Menu</h3>
+<hr>
+<!--menu_list_1-->
+<div class="row menu-list-1">
+    <div class="col-md-4">
+        <div class="box">
+            <%= link_to("/syusyou") do %>
+            <div class="icon">
+                <i class="fas fa-baby"></i>
+            </div>
+            <div class="menu-text">
+                出生届
+            </div>
+            <% end %>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="box">
+            <%= link_to("/konin") do %>
+            <div class="icon">
+                <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="menu-text">
+                婚姻届
+            </div>
+            <% end %>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="box">
+            <%= link_to("/rikon") do %>
+            <div class="icon">
+                <i class="fas fa-people-arrows"></i>
+            </div>
+            <div class="menu-text">
+                離婚届
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>
+<!--menu_list_2-->
+<div class="row menu-list-2">
+    <div class="col-md-4">
+        <div class="box">
+            <%= link_to("/shibou") do %>
+            <div class="icon">
+                <i class="fas fa-user-minus"></i>
+            </div>
+            <div class="menu-text">
+                死亡届
+            </div>
+            <% end %>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="box">
+            <%= link_to("/tenseki") do %>
+            <div class="icon">
+                <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div class="menu-text">
+                転籍届
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>

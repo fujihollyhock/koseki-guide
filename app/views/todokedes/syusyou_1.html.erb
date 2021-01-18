@@ -1,0 +1,50 @@
+            <h3><br>子の氏名</h3>
+            <div class="row">
+                <!--text-->
+                <div class="col-md-6 order-md-2">
+                    <!--img-->
+
+                    <div class="syusyou-01-img">
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <hr>
+                    氏の欄には名字を書いてください。<br>
+                    子どもの名前に使える漢字には、法律上の制限があります。<br><br>
+                    お時間があれば、<a href="http://www.moj.go.jp/MINJI/minji86.html">法務省のサイト</a>から、お子さんのお名前に使いたい漢字を検索してみてください。<br><br>
+
+                    次に、右隣にある「父母との続柄」の欄ですが、こちらは、ご状況によって、記入する内容のご案内が変わります。 お手間ですが、以下の質問にご回答くださいね。<br>
+                    <br>
+                    <br>
+                    ご状況にあった回答の番号を、「回答：」ボックスから選んで、回答ボタンを押してください。<br>
+                    お答えいただいた内容に合わせて、ご案内します。<br>
+                    <br>
+                    <!--質問-->
+                    <div class="question">
+                        <p>
+                            生まれたお子さんの父母は、婚姻していますか？<br>
+                            １．婚姻している<br>
+                            ２．婚姻していない<br>
+                        </p>
+                    </div>
+                    <br>
+                    <!--入力フォーム-->
+                    <div class="col-6">
+                        <%= form_with url: "/syusyou/2", method: :post, local: true do |f| %>
+                        <p>回答：<%= f.select :answer, ['1', '2'] %></p>
+                        <br>
+                        <div class="row">
+                            <div class="col-6">
+                                <%= f.submit "回答", class:"btn btn-secondary" %>
+                                <% end %>
+                            </div>
+                            <br>
+                            <!--ボタン-->
+                            <div class="col-6">
+                                <%= link_to("/syusyou") do %>
+                                <button type="button" class="btn btn-secondary">戻る</button>
+                                <% end %>
+                            </div>
+                        </div>
+                    </div>
+                </div>

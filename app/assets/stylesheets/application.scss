@@ -1,0 +1,238 @@
+ *{
+    margin:0;
+    padding: 0;
+}
+
+/*Web-font*/
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+/*top*/ 
+.top-text{
+    padding:250px 0px;
+    text-align: center;
+}
+
+.top-text h1{
+    font-size:80px;
+    font-family: 'Lobster', cursive;
+}
+
+.top-img{
+    background-image: url("top.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+/*Concept*/
+.concept-title{
+    font-size:60px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.concept-img{
+    background-image: url("concept.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+/*menu*/
+.menu-title{
+    font-size:60px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-list-1,.menu-list-2{
+    text-align: center;
+    margin: 20px;
+}
+
+.box{
+    border: solid 3px blue;
+    padding: 15px;
+    margin:20px;
+}
+
+.icon{
+    font-size: 80px;
+}
+
+.menu-text{
+    font-size: 20px;
+    color:black;
+}
+
+.menu-text:hover{
+    text-decoration: none;
+}
+
+/*contact*/
+.contact-title{
+    font-size:60px;
+    font-family: 'Lobster', cursive;
+    margin-top: 30px;
+}
+
+/*出生届*/
+.syusyou-img{
+    background-image: url("出生.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.syusyou-01-img{
+    background-image: url("出生_01.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.syusyou-02-img{
+    background-image: url("出生_02.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.syusyou-02-01-img{
+    background-image: url("出生_02_01.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -70px;
+}
+
+.syusyou-03-01-img{
+    background-image: url("出生_03_01.png");
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-position: center;
+}
+
+.syusyou-03-02-img{
+    margin-top: 30px;
+    margin-left:100px;
+    background-image: url("出生_03_02.png");
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+}
+
+.syusyou-04-img{
+    background-image: url("出生_04.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -50px;
+}
+
+.syusyou-05-img{
+    background-image: url("出生_05.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -50px;
+}
+
+.syusyou-05-01-img{
+    background-image: url("出生_05_01.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -50px;
+}
+
+.syusyou-06-img{
+    background-image: url("出生_06.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -50px;
+}
+
+.syusyou-06-01-img{
+    background-image: url("出生_06_01.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -50px;
+}
+
+.syusyou-07-img{
+    background-image: url("出生_07.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -40px;
+}
+
+.syusyou-07-01-img{
+    background-image: url("出生_07_01.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -40px;
+}
+
+.syusyou-08-img{
+    background-image: url("出生_08.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -40px;
+}
+
+.syusyou-08-01-img{
+    background-image: url("出生_08_01.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -40px;
+}
+
+.syusyou-09-img{
+    background-image: url("出生_09.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -40px;
+}
+
+.syusyou-09-01-img{
+    background-image: url("出生_09_01.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    margin-top: -40px;
+}
+
+.question{
+    background-color: #e6f0f0;
+    padding: 15px;
+}
+
+@import "bootstrap/scss/bootstrap";
+
+input[type="text"] {
+        width: 400px;
+        height:40px;
+    }
+
+textarea {
+  resize: auto;
+  max-width: 500px;
+  max-height: 500px;
+  min-width: 100px;
+  min-height: 100px;
+  width:400px;
+  height:150px
+}

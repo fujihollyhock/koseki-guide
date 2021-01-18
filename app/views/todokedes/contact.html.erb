@@ -1,0 +1,55 @@
+<div class="container">
+    <!--Contact-->
+    <div class="row">
+        <!--Contact_img-->
+        <div class="col-md-6 order-md-2">
+        </div>
+        <!--contact_form-->
+        <div class="col-md-6 order-md-1">
+            <!--Contact_title-->
+            <h3 class="contact-title">Contact</h3>
+            <hr>
+            <!--error-->
+            <%= form_for @contact, :url => contact_confirm_path do |f| %>
+            <% if @contact.errors.any? %>
+            <div class="alert alert-danger" role="alert">
+                <strong>お手数ですが、以下のとおりご対応をお願いします</strong>
+                <% @contact.errors.each do |attr, msg| %>
+                <li><%= msg %></li>
+                <% end %>
+            </div>
+            <% end %>
+
+            <!--contact_text-->
+            出生届・婚姻届・離婚届・死亡届・転籍届の書き方でご不明な点があれば、以下のフォームに入力して、確認ボタンを押してください。<br>
+            <br>
+            ３営業日以内にはご回答いたしますが、もしお急ぎの場合は、その旨を「お問い合わせ内容」の中に書いていただけると助かります。
+            <br>
+            <br>
+            <!--contact_form-->
+            <%= f.label :メールアドレス %>
+            <br>
+            <%= f.text_field :email %>
+            <br>
+            <%= f.label :お問い合わせ内容 %>
+            <br>
+            <%= f.text_area :message %>
+            <br>
+            <br>
+            <div class="row">
+                <!--confirm_btn-->
+                <div class="col-6">
+                    <%= f.submit '確認', class: 'btn btn-secondary' %>
+                    <% end %>
+                </div>
+                <br>
+                <!--back_btn-->
+                <div class="col-6">
+                    <!--ボタン-->
+                    <%= link_to("/contact") do %>
+                    <button type="button" class="btn btn-secondary">戻る</button>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>

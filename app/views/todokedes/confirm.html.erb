@@ -1,0 +1,23 @@
+<!--Contact-->
+<!--Contact_title-->
+<h3 class="contact-title">Contact</h3>
+<hr>
+<%= form_for @contact, :url => contact_thanks_path do |f| %>
+<table class="table">
+    <tr>
+        <th>メールアドレス</th>
+        <td>
+            <%= f.hidden_field :email %>
+            <%= @contact.email %>
+        </td>
+    </tr>
+    <tr>
+        <th>お問い合わせ内容</th>
+        <td>
+            <%= f.hidden_field :message %>
+            <%= simple_format(@contact.message) %>
+        </td>
+    </tr>
+</table>
+<%= f.submit '送信', :class => 'btn btn-secondary' %>
+<% end %>
